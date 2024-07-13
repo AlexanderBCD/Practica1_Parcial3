@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Comida</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+
+        .menu-item {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .menu-item-info {
+            padding: 1rem;
+            background-color: #F3F4F6;
+        }
+        .menu-item-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1E40AF;
+            margin-bottom: 0.5rem;
+        }
+        .menu-item-price {
+            font-size: 1rem;
+            color: #4A5568;
+        }
+        .back-button {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .back-button a {
+            background-color: #1E40AF;
+            color: #ffffff;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .back-button a:hover {
+            background-color: #1D4ED8;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-12 px-4">
+        <h1 class="text-4xl font-bold text-blue-500 text-center mb-8">Menú de Comida</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="menu-item">
+                <img src="9883c2802afcf5605bcd0d5897777cfe.jpg" alt="Plato 1">
+                <div class="menu-item-info">
+                    <p class="menu-item-name">Carnes Michoacan</p>
+                    <p class="menu-item-price">$1099</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="3ae53509ffad9eb393a153a492087e87.jpg" alt="Plato 2">
+                <div class="menu-item-info">
+                    <p class="menu-item-name">Tacos en su jugo</p>
+                    <p class="menu-item-price">$1299</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="ea2dde86da2f0be7ddfd34032f794eb1.jpg" alt="Plato 3">
+                <div class="menu-item-info">
+                    <p class="menu-item-name">Lasaña Verde</p>
+                    <p class="menu-item-price">$900</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="ffa81dc4ea2fe214ce0b6699a26b042b.jpg" alt="Plato 4">
+                <div class="menu-item-info">
+                    <p class="menu-item-name">Pozole</p>
+                    <p class="menu-item-price">$1000</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1dd16a0d744f2e86d3f4bee4c2b387a1.jpg" alt="Plato 5">
+                <div class="menu-item-info">
+                    <p class="menu-item-name">Quesadillas Fifirisnais </p>
+                    <p class="menu-item-price">$800</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="7acd4f24786fd968672c06665384204c.jpg" alt="Plato 6">
+                <div class="menu-item-info">
+                    <p class="menu-item-name">Huarache</p>
+                    <p class="menu-item-price">$500</p>
+                </div>
+            </div>
+        </div>
+        <div class="back-button">
+            <a href="index.html">Regresar al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>
